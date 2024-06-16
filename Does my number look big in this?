@@ -1,0 +1,13 @@
+def narcissistic( value ):
+    c = 0
+    k = 0
+    for i in str(value):
+        if int(i) >= 0:
+            c += 1
+    x = [int(a) for a in str(value)]
+    for j in x:
+        k += j**c
+    if k == value:
+        return True 
+    else:
+        return False
