@@ -1,9 +1,7 @@
 def narcissistic( value ):
-    c = 0
-    k = 0
+    c, k = 0, 0
     for i in str(value):
-        if int(i) >= 0:
-            c += 1
+        if int(i) >= 0: c += 1
     x = [int(a) for a in str(value)]
     for j in x:
         k += j**c
